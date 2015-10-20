@@ -1,0 +1,22 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "core repository from iTranslate",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iTranslate/core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iTranslate/core/issues"
+  },
+  "homepage": "https://github.com/iTranslate/core#readme"
+}
