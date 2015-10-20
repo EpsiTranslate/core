@@ -1,6 +1,6 @@
 'use strict';
 
-var dictionary = require('./dictionaries/eddy-malou.js');
+var dictionary = require('./dictionaries/leet.js');
 
 function replaceTextOnPage(obj){
 	var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
