@@ -3,22 +3,15 @@
 var dictionary = require('./dictionaries/eddy-malou.js');
 
 function replaceTextOnPage(obj){
-	getAllTextNodes().forEach(function(node){
+	var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+	
+	while(walker.nextNode()) {
+		var node = walker.currentNode;
 		for (var x in obj) {
-			node.nodeValue = node.nodeValue.replace(new RegExp(quote(x), 'g'), obj[x]);
+			node.textContent = node.textContent.replace(new RegExp(quote(x), 'g'), obj[x]);
 		}
-	});
-	function getAllTextNodes(){
-		var result = [];
-		(function scanSubTree(node){
-			if(node.childNodes.length)
-				for(var i = 0; i < node.childNodes.length; i++)
-					scanSubTree(node.childNodes[i]);
-			else if(node.nodeType == Node.TEXT_NODE)
-				result.push(node);
-		})(document);
-		return result;
-	}
+	};
+	
 	function quote(str){
 		return (str+'').replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
 	}
