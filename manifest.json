@@ -1,16 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "Eddy Malou",
+  "name": "iTranslate",
   "version": "0.1",
-  "description": "translate from what you want to what you want",
+  "description": "Translate from what you want to what you want",
   "author": "Malo Blanchard, Romain Baumier, Nathan Badaud, Walrand Degeorges, Julien Leroy, Arthur Rousseau",
   "content_scripts": [{
     "matches": [
       "<all_urls>"
     ],
-    "js": ["src/core.js"]
+    "js": ["extension.js"]
   }],
   "icons": {
-    "128": "icon.png"
+    "128": "./img/icon-128.png"
   }
 }

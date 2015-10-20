@@ -1,1 +1,1 @@
-browserify ./src/core.js -o ./congolexicomatisation.js
+browserify ./src/main.js -o ./extension.js

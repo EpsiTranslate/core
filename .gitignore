@@ -1,4 +1,19 @@
+# Temporary files
 .DS_Store
 .localized
 __MACOSX
 Thumb.db
+*~
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+node_modules
+
+# iTranslate output file
+extension.js
