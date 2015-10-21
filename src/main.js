@@ -1,6 +1,6 @@
 'use strict';
 
-var dictionary = require('./dictionaries/leet.js');
+var dictionnaries = require('./dictionnaries');
 
 function replaceTextOnPage(obj){
 	var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
@@ -17,4 +17,4 @@ function replaceTextOnPage(obj){
 	}
 }
 
-replaceTextOnPage(dictionary);
+replaceTextOnPage(dictionnaries);
