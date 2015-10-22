@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/iTranslate/core.svg)](https://travis-ci.org/iTranslate/core)
